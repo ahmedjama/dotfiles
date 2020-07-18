@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/ahmed.jama/.oh-my-zsh"
+export ZSH="/Users/$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -109,8 +109,7 @@ alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-alias synclab="rsync -arvz -e 'ssh -p 7222' --exclude '.DS_Store' ~/Documents/Code/GitLab/thg/srv/ uk2@185.2.136.70:/home/uk2/dev-dir/ --delete && ssh -p '7222' 'uk2@185.2.136.70' 'rsync -arvz /home/uk2/dev-dir/ cumulus@192.168.121.50:/home/cumulus/dev-dir/ --delete'"
-. /Users/ahmed.jama/z.sh
+. /Users/$HOME/z.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
